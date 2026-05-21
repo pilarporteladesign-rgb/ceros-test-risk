@@ -1,11 +1,7 @@
-// ==========================================
-// ✅ CEROS SDK RESULTS INITIALIZER
-// ==========================================
 window.initCerosResults = function (experience) {
 
   console.log("✅ External script loaded");
 
-  // ✅ Listen for results page visibility
   experience.findPagesByTag('results-page')
     .then(function (pages) {
 
@@ -21,15 +17,10 @@ window.initCerosResults = function (experience) {
 
 };
 
-
-// ==========================================
-// ✅ MAIN RESULTS FUNCTION
-// ==========================================
 function runResults(experience) {
 
   console.log("✅ Running results logic");
 
-  // ✅ TEST DATA (replace later with API / SharePoint)
   const data = {
     name: "Pilar",
     score: 72,
@@ -52,32 +43,23 @@ function runResults(experience) {
     }
   };
 
-
-  // ==========================================
-  // ✅ PAGE 1 — HEADER
-  // ==========================================
+  // Page 1
   experience.findComponentsByTag('user-name')
     .then(c => c.setText("Hi " + data.name));
 
   experience.findComponentsByTag('score-number')
     .then(c => c.setText(data.score.toString()));
 
-
-  // ==========================================
-  // ✅ SCORE IMAGE LOGIC
-  // ==========================================
+  // Score images
   experience.findComponentsByTag('score-image')
     .then(c => c.hide());
 
   experience.findComponentsByTag('score-' + data.score)
     .then(c => c.show());
 
-
-  // ==========================================
-  // ✅ PAGE 1 — STATS
-  // ==========================================
+  // Stats
   data.stats.forEach((stat, i) => {
-    const index = i + 1;
+    let index = i + 1;
 
     experience.findComponentsByTag('stat-name-' + index)
       .then(c => c.setText(stat.name));
@@ -86,75 +68,43 @@ function runResults(experience) {
       .then(c => c.setText(stat.value.toString()));
   });
 
-
-  // ==========================================
-  // ✅ PAGE 2 — HEADER
-  // ==========================================
+  // Header
   experience.findComponentsByTag('header-eyebrow')
     .then(c => c.setText(data.header.eyebrow));
 
   experience.findComponentsByTag('header-number')
     .then(c => c.setText(data.score.toString()));
 
-
-  // ==========================================
-  // ✅ CARD LOGIC
-  // ==========================================
+  // Cards
   data.cards.forEach((card, i) => {
+    let index = i + 1;
 
-    const index = i + 1;
-
-    // ✅ Title
     experience.findComponentsByTag('card-title-' + index)
       .then(c => c.setText(card.title));
 
-    // ✅ Description text
     experience.findComponentsByTag('card-text-' + index)
       .then(c => c.setText(card.text));
 
-    // ==========================================
-    // ✅ ICON LOGIC (UP / DOWN)
-    // ==========================================
     const upTag = 'card-icon-up-' + index;
     const downTag = 'card-icon-down-' + index;
 
     if (card.trend === "up") {
-
-      experience.findComponentsByTag(upTag)
-        .then(c => c.show());
-
-      experience.findComponentsByTag(downTag)
-        .then(c => c.hide());
-
+      experience.findComponentsByTag(upTag).then(c => c.show());
+      experience.findComponentsByTag(downTag).then(c => c.hide());
     } else {
-
-      experience.findComponentsByTag(upTag)
-        .then(c => c.hide());
-
-      experience.findComponentsByTag(downTag)
-        .then(c => c.show());
+      experience.findComponentsByTag(upTag).then(c => c.hide());
+      experience.findComponentsByTag(downTag).then(c => c.show());
     }
 
-
-    // ==========================================
-    // ✅ BAR LOGIC (WIDTH SIMULATION)
-    // ==========================================
     const step = getBarStep(card.value);
 
-    // Hide all variations
     experience.findComponentsByTag('card-bar-' + index)
       .then(c => c.hide());
 
-    // Show correct variation
-    experience.findComponentsByTag('bar-' + index + '-' + step)
+    experience.findComponentsByTag(`bar-${index}-${step}`)
       .then(c => c.show());
-
   });
 
-
-  // ==========================================
-  // ✅ TRIGGER ANIMATIONS
-  // ==========================================
   setTimeout(() => {
     experience.findComponentsByTag('results-trigger')
       .then(c => c.click());
@@ -162,15 +112,9 @@ function runResults(experience) {
 
 }
 
-
-// ==========================================
-// ✅ HELPER: BAR STEP CALCULATION
-// ==========================================
 function getBarStep(value) {
-
   if (value <= 25) return 25;
   if (value <= 50) return 50;
   if (value <= 75) return 75;
-
   return 100;
 }

@@ -1,24 +1,26 @@
-(function() {
+(function () {
 
   console.log("✅ External JS Loaded");
 
-  require.config({
-    paths: {
-      CerosSDK: "//sdk.ceros.com/standalone-player-sdk-v5.min"
+  function init() {
+
+    if (!window.CerosSDK) {
+      console.log("⏳ Waiting for SDK...");
+      setTimeout(init, 100);
+      return;
     }
-  });
 
-  require(['CerosSDK'], function(CerosSDK) {
+    console.log("✅ SDK Detected");
 
-    CerosSDK.findExperience().done(function(experience) {
+    window.CerosSDK.findExperience().done(function (experience) {
 
-      console.log("✅ SDK Ready (from external file)");
+      console.log("✅ SDK Ready (external)");
 
-      setTimeout(function() {
+      setTimeout(function () {
 
         console.log("✅ Fetching GitHub data");
 
-        getExternalData(function(data) {
+        getExternalData(function (data) {
 
           console.log("✅ Data received:", data);
 
@@ -30,16 +32,20 @@
 
     });
 
-  });
+  }
 
-  // ✅ FETCH FROM GITHUB JSON
+  // ✅ START INIT
+  init();
+
+
+  // ✅ FETCH JSON
   function getExternalData(callback) {
 
     fetch("https://raw.githubusercontent.com/pilarporteladesign-rgb/ceros-test-risk/main/data.json")
-      .then(function(response) {
+      .then(function (response) {
         return response.json();
       })
-      .then(function(data) {
+      .then(function (data) {
 
         callback({
           name: data.name,
@@ -47,25 +53,23 @@
         });
 
       })
-      .catch(function(error) {
+      .catch(function (error) {
         console.error("❌ Fetch error:", error);
       });
 
   }
 
-  // ✅ UPDATE UI VIA ID (YOUR WORKING METHOD)
+  // ✅ UPDATE UI
   function updateUI(experience, data) {
 
-    console.log("✅ Updating UI from external JS");
+    console.log("✅ Updating UI");
 
-    // ✅ NAME (update with your real ID)
     var nameComponent = experience.findComponentById('6a0ce37dd7c1e');
 
     if (nameComponent) {
       nameComponent.setText("Hi " + data.name);
     }
 
-    // ✅ SCORE (update with your real ID)
     var scoreComponent = experience.findComponentById('6a0cc3669d712');
 
     if (scoreComponent) {

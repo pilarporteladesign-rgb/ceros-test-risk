@@ -1,120 +1,77 @@
-window.initCerosResults = function (experience) {
+(function() {
 
-  console.log("✅ External script loaded");
+  console.log("✅ External JS Loaded");
 
-  experience.findPagesByTag('results-page')
-    .then(function (pages) {
+  require.config({
+    paths: {
+      CerosSDK: "//sdk.ceros.com/standalone-player-sdk-v5.min"
+    }
+  });
 
-      pages.on('pageVisible', function () {
+  require(['CerosSDK'], function(CerosSDK) {
 
-        console.log("✅ Results page visible");
+    CerosSDK.findExperience().done(function(experience) {
 
-        runResults(experience);
+      console.log("✅ SDK Ready (from external file)");
 
-      });
+      setTimeout(function() {
+
+        console.log("✅ Fetching GitHub data");
+
+        getExternalData(function(data) {
+
+          console.log("✅ Data received:", data);
+
+          updateUI(experience, data);
+
+        });
+
+      }, 1500);
 
     });
 
-};
-
-function runResults(experience) {
-
-  console.log("✅ Running results logic");
-
-  const data = {
-    name: "Pilar",
-    score: 72,
-
-    stats: [
-      { name: "Claims", value: 45 },
-      { name: "Exposure", value: 68 },
-      { name: "Control", value: 80 }
-    ],
-
-    cards: [
-      { title: "Exposure", text: "Above avg", trend: "up", value: 75 },
-      { title: "Claims", text: "Below avg", trend: "down", value: 40 },
-      { title: "Controls", text: "Stable", trend: "up", value: 60 },
-      { title: "Compliance", text: "Good", trend: "up", value: 80 }
-    ],
-
-    header: {
-      eyebrow: "Your Risk Profile"
-    }
-  };
-
-  // Page 1
-  experience.findComponentsByTag('user-name')
-    .then(c => c.setText("Hi " + data.name));
-
-  experience.findComponentsByTag('score-number')
-    .then(c => c.setText(data.score.toString()));
-
-  // Score images
-  experience.findComponentsByTag('score-image')
-    .then(c => c.hide());
-
-  experience.findComponentsByTag('score-' + data.score)
-    .then(c => c.show());
-
-  // Stats
-  data.stats.forEach((stat, i) => {
-    let index = i + 1;
-
-    experience.findComponentsByTag('stat-name-' + index)
-      .then(c => c.setText(stat.name));
-
-    experience.findComponentsByTag('stat-value-' + index)
-      .then(c => c.setText(stat.value.toString()));
   });
 
-  // Header
-  experience.findComponentsByTag('header-eyebrow')
-    .then(c => c.setText(data.header.eyebrow));
+  // ✅ FETCH FROM GITHUB JSON
+  function getExternalData(callback) {
 
-  experience.findComponentsByTag('header-number')
-    .then(c => c.setText(data.score.toString()));
+    fetch("https://raw.githubusercontent.com/pilarporteladesign-rgb/ceros-test-risk/main/data.json")
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(data) {
 
-  // Cards
-  data.cards.forEach((card, i) => {
-    let index = i + 1;
+        callback({
+          name: data.name,
+          score: data.score
+        });
 
-    experience.findComponentsByTag('card-title-' + index)
-      .then(c => c.setText(card.title));
+      })
+      .catch(function(error) {
+        console.error("❌ Fetch error:", error);
+      });
 
-    experience.findComponentsByTag('card-text-' + index)
-      .then(c => c.setText(card.text));
+  }
 
-    const upTag = 'card-icon-up-' + index;
-    const downTag = 'card-icon-down-' + index;
+  // ✅ UPDATE UI VIA ID (YOUR WORKING METHOD)
+  function updateUI(experience, data) {
 
-    if (card.trend === "up") {
-      experience.findComponentsByTag(upTag).then(c => c.show());
-      experience.findComponentsByTag(downTag).then(c => c.hide());
-    } else {
-      experience.findComponentsByTag(upTag).then(c => c.hide());
-      experience.findComponentsByTag(downTag).then(c => c.show());
+    console.log("✅ Updating UI from external JS");
+
+    // ✅ NAME (update with your real ID)
+    var nameComponent = experience.findComponentById('6a0ce37dd7c1e');
+
+    if (nameComponent) {
+      nameComponent.setText("Hi " + data.name);
     }
 
-    const step = getBarStep(card.value);
+    // ✅ SCORE (update with your real ID)
+    var scoreComponent = experience.findComponentById('6a0cc3669d712');
 
-    experience.findComponentsByTag('card-bar-' + index)
-      .then(c => c.hide());
+    if (scoreComponent) {
+      scoreComponent.setText(data.score.toString());
+    }
 
-    experience.findComponentsByTag(`bar-${index}-${step}`)
-      .then(c => c.show());
-  });
+  }
 
-  setTimeout(() => {
-    experience.findComponentsByTag('results-trigger')
-      .then(c => c.click());
-  }, 300);
-
-}
-
-function getBarStep(value) {
-  if (value <= 25) return 25;
-  if (value <= 50) return 50;
-  if (value <= 75) return 75;
-  return 100;
-}
+})();

@@ -1,81 +1,63 @@
-(function () {
+<script>
+(function() {
 
-  console.log("✅ External JS Loaded");
+  console.log("✅ Inline working version (navigation-aware)");
 
-  function init() {
-
-    if (!window.CerosSDK) {
-      console.log("⏳ Waiting for SDK...");
-      setTimeout(init, 100);
-      return;
+  require.config({
+    paths: {
+      CerosSDK: "//sdk.ceros.com/standalone-player-sdk-v5.min"
     }
+  });
 
-    console.log("✅ SDK Detected");
+  require(['CerosSDK'], function(CerosSDK) {
 
-    window.CerosSDK.findExperience().done(function (experience) {
+    CerosSDK.findExperience().done(function(experience) {
 
-      console.log("✅ SDK Ready (external)");
+      console.log("✅ SDK Ready");
 
-      setTimeout(function () {
+      // ✅ RUN on ANY page change
+      experience.on('pageChanged', function() {
 
-        console.log("✅ Fetching GitHub data");
+        console.log("✅ Page changed → run update");
 
-        getExternalData(function (data) {
+        runUpdate(experience);
 
-          console.log("✅ Data received:", data);
+      });
 
-          updateUI(experience, data);
-
-        });
-
-      }, 1500);
+      // ✅ ALSO run once on load
+      runUpdate(experience);
 
     });
 
-  }
+  });
 
-  // ✅ START INIT
-  init();
+  function runUpdate(experience) {
 
+    console.log("✅ Fetching fresh data");
 
-  // ✅ FETCH JSON
-  function getExternalData(callback) {
-
-    fetch("https://raw.githubusercontent.com/pilarporteladesign-rgb/ceros-test-risk/main/data.json")
-      .then(function (response) {
-        return response.json();
+    fetch("https://raw.githubusercontent.com/pilarporteladesign-rgb/ceros-test-risk/main/data.json?ts=" + Date.now())
+      .then(function(res) {
+        return res.json();
       })
-      .then(function (data) {
+      .then(function(data) {
 
-        callback({
-          name: data.name,
-          score: data.score
-        });
+        console.log("✅ Data received:", data);
 
-      })
-      .catch(function (error) {
-        console.error("❌ Fetch error:", error);
+        // ✅ NAME
+        var nameComponent = experience.findComponentById('6a0ce37dd7c1e');
+        if (nameComponent) {
+          nameComponent.setText("Hi " + data.name);
+        }
+
+        // ✅ SCORE
+        var scoreComponent = experience.findComponentById('6a0cc3669d712');
+        if (scoreComponent) {
+          scoreComponent.setText(data.score.toString());
+        }
+
       });
 
   }
 
-  // ✅ UPDATE UI
-  function updateUI(experience, data) {
-
-    console.log("✅ Updating UI");
-
-    var nameComponent = experience.findComponentById('6a0ce37dd7c1e');
-
-    if (nameComponent) {
-      nameComponent.setText("Hi " + data.name);
-    }
-
-    var scoreComponent = experience.findComponentById('6a0cc3669d712');
-
-    if (scoreComponent) {
-      scoreComponent.setText(data.score.toString());
-    }
-
-  }
-
 })();
+</script>

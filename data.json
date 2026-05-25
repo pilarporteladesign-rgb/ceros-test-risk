@@ -2,18 +2,15 @@
   "name": "Pilar",
   "score": 72,
   "stats": [45, 68, 80],
-
   "page3": {
     "eyebrow": "Your Risk Insights",
     "headlineNumber": 4,
-
     "cards": [
       { "title": "Coverage A", "trend": "Below" },
       { "title": "Coverage B", "trend": "Above" },
       { "title": "Coverage C", "trend": "Below" },
       { "title": "Coverage D", "trend": "Above" }
     ],
-
     "footer": [
       { "text": "Improvement Areas", "value": 3 },
       { "text": "Strengths", "value": 5 },
@@ -21,4 +18,3 @@
     ]
   }
 }
-

@@ -1,1 +1,9 @@
-{"name":"Pilar","score":85}
+{
+  "name": "Pilar",
+  "score": 72,
+  "stats": [
+    45,
+    68,
+    80
+  ]
+}

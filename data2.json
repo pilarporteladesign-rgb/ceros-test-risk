@@ -1,6 +1,6 @@
 {
   "eyebrow": "WHERE WE FOUND GAPS",
-  "title": "Five areas where you're below peer benchmark.",
+  "title": "Five coverage areas where you're below peer benchmark.",
   "titleHighlight": "below peer benchmark.",
   "cards": [
     {
@@ -36,7 +36,7 @@
   ],
   "footerStats": [
     { "number": "12", "legend": "Policies reviewed" },
-    { "number": "3", "legend": "Gaps identified" },
+    { "number": "$45.6M", "legend": "CORPORATE PLAN ASSETS" },
     { "number": "8", "legend": "Recommendations" }
   ],
   "footerTitle": "Summary",

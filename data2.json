@@ -4,15 +4,41 @@
   "titleHighlight": "below peer benchmark.",
   "cards": [
     {
-      "rank": "Rank 1",
-      "title": "Title Card",
-      "indicator": "Indicator text",
-      "supportingText": "Supporting Bar Text",
+      "title": "Card Title 1",
+      "indicator": "-12% vs peers",
+      "supportingText": "40% coverage",
       "percentage": 40
     },
-    { "rank": "Rank 2", "title": "...", "indicator": "...", "supportingText": "...", "percentage": 55 },
-    { "rank": "Rank 3", "title": "...", "indicator": "...", "supportingText": "...", "percentage": 30 },
-    { "rank": "Rank 4", "title": "...", "indicator": "...", "supportingText": "...", "percentage": 65 },
-    { "rank": "Rank 5", "title": "...", "indicator": "...", "supportingText": "...", "percentage": 20 }
-  ]
+    {
+      "title": "Card Title 2",
+      "indicator": "-8% vs peers",
+      "supportingText": "55% coverage",
+      "percentage": 55
+    },
+    {
+      "title": "Card Title 3",
+      "indicator": "-15% vs peers",
+      "supportingText": "30% coverage",
+      "percentage": 30
+    },
+    {
+      "title": "Card Title 4",
+      "indicator": "-5% vs peers",
+      "supportingText": "65% coverage",
+      "percentage": 65
+    },
+    {
+      "title": "Card Title 5",
+      "indicator": "-20% vs peers",
+      "supportingText": "20% coverage",
+      "percentage": 20
+    }
+  ],
+  "footerStats": [
+    { "number": "5", "legend": "Legend 1" },
+    { "number": "5", "legend": "Legend 2" },
+    { "number": "5", "legend": "Legend 3" }
+  ],
+  "footerTitle": "Title",
+  "footerIndustry": "Industry"
 }

@@ -1,0 +1,18 @@
+{
+  "eyebrow": "WHERE WE FOUND GAPS",
+  "title": "Five coverage areas where you're below peer benchmark.",
+  "titleHighlight": "below peer benchmark.",
+  "cards": [
+    {
+      "rank": "Rank 1",
+      "title": "Title Card",
+      "indicator": "Indicator text",
+      "supportingText": "Supporting Bar Text",
+      "percentage": 40
+    },
+    { "rank": "Rank 2", "title": "...", "indicator": "...", "supportingText": "...", "percentage": 55 },
+    { "rank": "Rank 3", "title": "...", "indicator": "...", "supportingText": "...", "percentage": 30 },
+    { "rank": "Rank 4", "title": "...", "indicator": "...", "supportingText": "...", "percentage": 65 },
+    { "rank": "Rank 5", "title": "...", "indicator": "...", "supportingText": "...", "percentage": 20 }
+  ]
+}

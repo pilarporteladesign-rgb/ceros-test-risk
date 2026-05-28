@@ -1,44 +1,44 @@
 {
   "eyebrow": "WHERE WE FOUND GAPS",
-  "title": "Five coverage areas where you're below peer benchmark.",
+  "title": "Five areas where you're below peer benchmark.",
   "titleHighlight": "below peer benchmark.",
   "cards": [
     {
-      "title": "Card Title 1",
+      "title": "Cyber Liability",
       "indicator": "-12% vs peers",
       "supportingText": "40% coverage",
       "percentage": 40
     },
     {
-      "title": "Card Title 2",
+      "title": "D&O Coverage",
       "indicator": "-8% vs peers",
       "supportingText": "55% coverage",
       "percentage": 55
     },
     {
-      "title": "Card Title 3",
+      "title": "Professional Liability",
       "indicator": "-15% vs peers",
       "supportingText": "30% coverage",
       "percentage": 30
     },
     {
-      "title": "Card Title 4",
+      "title": "Property Coverage",
       "indicator": "-5% vs peers",
       "supportingText": "65% coverage",
       "percentage": 65
     },
     {
-      "title": "Card Title 5",
+      "title": "Workers Comp",
       "indicator": "-20% vs peers",
       "supportingText": "20% coverage",
       "percentage": 20
     }
   ],
   "footerStats": [
-    { "number": "5", "legend": "Legend 1" },
-    { "number": "5", "legend": "Legend 2" },
-    { "number": "5", "legend": "Legend 3" }
+    { "number": "12", "legend": "Policies reviewed" },
+    { "number": "3", "legend": "Gaps identified" },
+    { "number": "8", "legend": "Recommendations" }
   ],
-  "footerTitle": "Title",
-  "footerIndustry": "Industry"
+  "footerTitle": "Summary",
+  "footerIndustry": "Technology"
 }

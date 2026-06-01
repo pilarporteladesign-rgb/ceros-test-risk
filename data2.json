@@ -20,7 +20,9 @@
     "eyebrow": "Your Risk Profile Score",
     "title": "You're scoring solid — with room to grow.",
     "titleHighlight": "solid — with room",
-    "bodyCopy": "Based on five weighted dimensions..."
+    "bodyCopy": "Based on five weighted dimensions...",
+    "score": 71,
+    "scoreLegend": "Strong - Above peer median"
   },
   "slide5": {
     "eyebrow": "WHERE WE FOUND GAPS",

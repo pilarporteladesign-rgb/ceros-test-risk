@@ -3,29 +3,16 @@
     "eyebrow": "Risk Profile Plan (2025)",
     "title": "Your Blueprint Risk Profile Plan",
     "titleHighlight": "Blueprint",
-    "bodyCopy": "A data-driven framework to mitigate risk, optimize coverage, and unlock value across your insurance program."
+    "bodyCopy": "A data-driven framework to mitigate risk..."
   },
   "slide3": {
     "eyebrow": "OUR Methodology",
     "title": "The five pillars of a winning risk profile.",
     "titleHighlight": "winning risk profile.",
     "cards": [
-      {
-        "number": "01",
-        "title": "Exposure & Hazard",
-        "description": "Revenue, payroll, assets operations",
-        "icon": "tactit"
-      },
-      { "number": "02", "title": "Claims & Risk Consulting", "description": "...", "icon": "time" },
-      { "number": "03", "title": "Coverage Benchmarking", "description": "...", "icon": "contract" },
-      { "number": "04", "title": "Risk Management Practices", "description": "...", "icon": "checkbox" },
-      { "number": "05", "title": "Product & Industry", "description": "...", "icon": "chart" }
+      { "number": "01", "title": "Exposure & Hazard", "description": "Revenue, payroll, assets operations", "icon": "tactit" }
     ],
-    "footerStats": [
-      { "number": "5", "legend": "Legend" },
-      { "number": "5", "legend": "Legend" },
-      { "number": "5", "legend": "Legend" }
-    ],
+    "footerStats": [{ "number": "5", "legend": "Legend" }],
     "footerTitle": "Title",
     "footerIndustry": "Industry"
   },
@@ -33,29 +20,16 @@
     "eyebrow": "Your Risk Profile Score",
     "title": "You're scoring solid — with room to grow.",
     "titleHighlight": "solid — with room",
-    "bodyCopy": "Based on five weighted dimensions of your insurance program, your risk profile sits firmly in the upper-middle tier of peer organizations in Real Estate & Hospitality"
+    "bodyCopy": "Based on five weighted dimensions..."
   },
   "slide5": {
     "eyebrow": "WHERE WE FOUND GAPS",
     "title": "Five coverage areas where you're below peer benchmark.",
     "titleHighlight": "below peer benchmark.",
     "cards": [
-      {
-        "title": "Cyber Liability",
-        "indicator": "-12% vs peers",
-        "supportingText": "40% coverage",
-        "percentage": 40
-      },
-      { "title": "Card 2", "indicator": "...", "supportingText": "...", "percentage": 55 },
-      { "title": "Card 3", "indicator": "...", "supportingText": "...", "percentage": 30 },
-      { "title": "Card 4", "indicator": "...", "supportingText": "...", "percentage": 65 },
-      { "title": "Card 5", "indicator": "...", "supportingText": "...", "percentage": 20 }
+      { "title": "Cyber Liability", "indicator": "-12% vs peers", "supportingText": "40% coverage", "percentage": 40 }
     ],
-    "footerStats": [
-      { "number": "12", "legend": "Policies" },
-      { "number": "3", "legend": "Gaps" },
-      { "number": "8", "legend": "Recs" }
-    ],
+    "footerStats": [{ "number": "12", "legend": "Policies" }],
     "footerTitle": "Summary",
     "footerIndustry": "Technology"
   },
@@ -64,22 +38,9 @@
     "title": "The actions we'll take to close every gap.",
     "titleHighlight": "close every gap.",
     "cards": [
-      {
-        "step": "Step 1",
-        "title": "Title Card",
-        "description": "Obtain quotes and pricing for coverage limits at peer median or target percentile.",
-        "highlightText": "Highlight Text"
-      },
-      { "step": "Step 2", "title": "...", "description": "...", "highlightText": "..." },
-      { "step": "Step 3", "title": "...", "description": "...", "highlightText": "..." },
-      { "step": "Step 4", "title": "...", "description": "...", "highlightText": "..." },
-      { "step": "Step 5", "title": "...", "description": "...", "highlightText": "..." }
+      { "step": "Step 1", "title": "Title Card", "description": "Obtain quotes...", "highlightText": "Highlight Text" }
     ],
-    "footerStats": [
-      { "number": "5", "legend": "Legend" },
-      { "number": "5", "legend": "Legend" },
-      { "number": "5", "legend": "Legend" }
-    ],
+    "footerStats": [{ "number": "5", "legend": "Legend" }],
     "footerTitle": "Title",
     "footerIndustry": "Industry"
   }

@@ -11,6 +11,8 @@
     "titleHighlight": "winning risk profile.",
     "cards": [
       { "number": "01", "title": "Exposure & Hazard", "description": "Revenue, payroll, assets operations", "icon": "tactit" }
+      { "number": "02", "title": "Claims & Risk Consulting", "description": "Loss history, severity, frequency", "icon": "time" }
+      { "number": "03", "title": "Coverage Benchmarking", "description": "Limits vs. peer group standard", "icon": "contract" }
     ],
     "footerStats": [{ "number": "5", "legend": "Legend" }],
     "footerTitle": "Title",
@@ -29,7 +31,10 @@
     "title": "Five coverage areas where you're below peer benchmark.",
     "titleHighlight": "below peer benchmark.",
     "cards": [
+      { "title": "Umbrella Liability", "indicator": "-5% vs peers", "supportingText": "60% coverage", "percentage": 60 }
       { "title": "Cyber Liability", "indicator": "-12% vs peers", "supportingText": "40% coverage", "percentage": 40 }
+      { "title": "D&O Liability", "indicator": "-10% vs peers", "supportingText": "20% coverage", "percentage": 20 }
+      { "title": "Crime Liability", "indicator": "-30% vs peers", "supportingText": "30% coverage", "percentage": 30 }
     ],
     "footerStats": [{ "number": "12", "legend": "Policies" }],
     "footerTitle": "Summary",

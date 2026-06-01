@@ -10,20 +10,39 @@
     "title": "The five pillars of a winning risk profile.",
     "titleHighlight": "winning risk profile.",
     "cards": [
-      { "number": "01", "title": "Exposure & Hazard", "description": "Revenue, payroll, assets operations", "icon": "tactit" }
-      { "number": "02", "title": "Claims & Risk Consulting", "description": "Loss history, severity, frequency", "icon": "time" }
-      { "number": "03", "title": "Coverage Benchmarking", "description": "Limits vs. peer group standard", "icon": "contract" }
+      {
+        "number": "01",
+        "title": "Exposure & Hazard",
+        "description": "Revenue, payroll, assets and operations exposure analysis",
+        "icon": "tactit"
+      },
+      {
+        "number": "02",
+        "title": "Claims History",
+        "description": "Frequency, severity and trending patterns over 5 years",
+        "icon": "time"
+      },
+      {
+        "number": "03",
+        "title": "Policy Structure",
+        "description": "Limits, deductibles, exclusions vs. peer benchmarks",
+        "icon": "contract"
+      }
     ],
-    "footerStats": [{ "number": "5", "legend": "Legend" }],
-    "footerTitle": "Title",
-    "footerIndustry": "Industry"
+    "footerStats": [
+      { "number": "5", "legend": "Dimensions scored" },
+      { "number": "23", "legend": "Data points analyzed" },
+      { "number": "12", "legend": "Peer comparisons" }
+    ],
+    "footerTitle": "Methodology Overview",
+    "footerIndustry": "Technology"
   },
   "slide4": {
     "eyebrow": "Your Risk Profile Score",
     "title": "You're scoring solid — with room to grow.",
     "titleHighlight": "solid — with room",
     "bodyCopy": "Based on five weighted dimensions...",
-    "score": 86,
+    "score": 71,
     "scoreLegend": "Strong - Above peer median"
   },
   "slide5": {
@@ -31,12 +50,15 @@
     "title": "Five coverage areas where you're below peer benchmark.",
     "titleHighlight": "below peer benchmark.",
     "cards": [
-      { "title": "Umbrella Liability", "indicator": "-5% vs peers", "supportingText": "60% coverage", "percentage": 60 }
-      { "title": "Cyber Liability", "indicator": "-12% vs peers", "supportingText": "40% coverage", "percentage": 40 }
-      { "title": "D&O Liability", "indicator": "-10% vs peers", "supportingText": "20% coverage", "percentage": 20 }
-      { "title": "Crime Liability", "indicator": "-30% vs peers", "supportingText": "30% coverage", "percentage": 30 }
+      { "title": "Cyber Liability", "indicator": "-12% vs peers", "supportingText": "40% coverage", "percentage": 40 },
+      { "title": "D&O Coverage", "indicator": "-8% vs peers", "supportingText": "55% coverage", "percentage": 55 },
+      { "title": "Professional Liability", "indicator": "-15% vs peers", "supportingText": "30% coverage", "percentage": 30 }
     ],
-    "footerStats": [{ "number": "12", "legend": "Policies" }],
+    "footerStats": [
+      { "number": "12", "legend": "Policies reviewed" },
+      { "number": "3", "legend": "Gaps identified" },
+      { "number": "8", "legend": "Recommendations" }
+    ],
     "footerTitle": "Summary",
     "footerIndustry": "Technology"
   },
@@ -45,10 +67,16 @@
     "title": "The actions we'll take to close every gap.",
     "titleHighlight": "close every gap.",
     "cards": [
-      { "step": "Step 1", "title": "Title Card", "description": "Obtain quotes...", "highlightText": "Highlight Text" }
+      { "step": "Step 1", "title": "Obtain Quotes", "description": "Obtain quotes and pricing for coverage limits at peer median.", "highlightText": "Priority" },
+      { "step": "Step 2", "title": "Review Exclusions", "description": "Identify and negotiate removal of key exclusions.", "highlightText": "In Progress" },
+      { "step": "Step 3", "title": "Restructure Deductibles", "description": "Optimize deductible levels to balance premium and risk.", "highlightText": "Planned" }
     ],
-    "footerStats": [{ "number": "5", "legend": "Legend" }],
-    "footerTitle": "Title",
-    "footerIndustry": "Industry"
+    "footerStats": [
+      { "number": "5", "legend": "Action items" },
+      { "number": "3", "legend": "In progress" },
+      { "number": "2", "legend": "Completed" }
+    ],
+    "footerTitle": "Action Plan",
+    "footerIndustry": "Technology"
   }
 }

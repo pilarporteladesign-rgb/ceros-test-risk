@@ -33,7 +33,7 @@
 
   function runUpdate(experience) {
 
-    fetch("https://raw.githubusercontent.com/pilarporteladesign-rgb/ceros-test-risk/main/data.json?ts=" + Date.now())
+    fetch("https://raw.githubusercontent.com/pilarporteladesign-rgb/ceros-test-risk/main/data3.json?ts=" + Date.now())
       .then(res => res.json())
       .then(function (data) {
 

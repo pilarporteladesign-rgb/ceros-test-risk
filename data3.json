@@ -1,17 +1,17 @@
 {
-  "companyName": "ABC Company",
-  "industry": "Manufacturing",
-  "annualRevenue": "$550,000,000",
+  "companyName": "My Company",
+  "industry": "Aerospace",
+  "annualRevenue": "$460,000,000",
 
-  "documentsUploaded": 12,
-  "datapointsIdentified": 47,
-  "questionsAnswered": 14,
+  "documentsUploaded": 32,
+  "datapointsIdentified": 55,
+  "questionsAnswered": 9,
 
-  "totalPremiumValue": "$5.1B",
-  "totalPremiumLabel": "Total Premium - Manufacturing",
+  "totalPremiumValue": "$1.3B",
+  "totalPremiumLabel": "Total Premium - Aerospace",
 
-  "clientsInIndustry": "71,453",
-  "activePolicies": "123,162",
+  "clientsInIndustry": "85,453",
+  "activePolicies": "23,162",
 
   "page3": {
     "missingFields": [
@@ -19,7 +19,7 @@
       "Coverage Benchmarking",
       "Claims Consulting",
       "Risk Management",
-      "Product / Industry"
+      "Product / Other Industry"
     ]
   },
 

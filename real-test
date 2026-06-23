@@ -1,21 +1,21 @@
 {
-  "companyName": "ABC Company",
-  "industry": "Manufacturing",
-  "annualRevenue": "$550,000,000",
-  "documentsUploaded": 12,
-  "datapointsIdentified": 47,
-  "questionsAnswered": 14,
+  "companyName": "My Company",
+  "industry": "Aerospace",
+  "annualRevenue": "$350,000,000",
+  "documentsUploaded": 22,
+  "datapointsIdentified": 56,
+  "questionsAnswered": 09,
 
-  "totalPremiumNumber": "$5.1B",
-  "totalPremiumLabel": "Total Premium - Manufacturing",
-  "clientsInIndustry": "71,453",
-  "activePolicies": "123,162",
+  "totalPremiumNumber": "$4.6B",
+  "totalPremiumLabel": "Total Premium - Aerospace",
+  "clientsInIndustry": "615,983",
+  "activePolicies": "13,162",
 
   "page3": {
-    "missingFieldsText1": "(2 missing fields)",
+    "missingFieldsText1": "(4 missing fields)",
     "missingFieldsText2": "(2 missing fields)",
-    "missingFieldsText3": "(2 missing fields)",
-    "missingFieldsText4": "(2 missing fields)",
+    "missingFieldsText3": "(10 missing fields)",
+    "missingFieldsText4": " ",
     "missingFieldsText5": "(2 missing fields)",
 
     "dots": {

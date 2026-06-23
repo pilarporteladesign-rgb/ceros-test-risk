@@ -1,0 +1,33 @@
+{
+  "companyName": "ABC Company",
+  "industry": "Manufacturing",
+  "annualRevenue": "$550,000,000",
+
+  "documentsUploaded": 12,
+  "datapointsIdentified": 47,
+  "questionsAnswered": 14,
+
+  "totalPremiumValue": "$5.1B",
+  "totalPremiumLabel": "Total Premium - Manufacturing",
+
+  "clientsInIndustry": "71,453",
+  "activePolicies": "123,162",
+
+  "page3": {
+    "missingFields": [
+      "Exposure & Hazard",
+      "Coverage Benchmarking",
+      "Claims Consulting",
+      "Risk Management",
+      "Product / Industry"
+    ]
+  },
+
+  "dotColors": [
+    "red",
+    "yellow",
+    "green",
+    "red",
+    "yellow"
+  ]
+}

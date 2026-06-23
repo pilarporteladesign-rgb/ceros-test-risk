@@ -1,0 +1,29 @@
+{
+  "companyName": "ABC Company",
+  "industry": "Manufacturing",
+  "annualRevenue": "$550,000,000",
+  "documentsUploaded": 12,
+  "datapointsIdentified": 47,
+  "questionsAnswered": 14,
+
+  "totalPremiumNumber": "$5.1B",
+  "totalPremiumLabel": "Total Premium - Manufacturing",
+  "clientsInIndustry": "71,453",
+  "activePolicies": "123,162",
+
+  "page3": {
+    "missingFieldsText1": "(2 missing fields)",
+    "missingFieldsText2": "(2 missing fields)",
+    "missingFieldsText3": "(2 missing fields)",
+    "missingFieldsText4": "(2 missing fields)",
+    "missingFieldsText5": "(2 missing fields)",
+
+    "dots": {
+      "group1": "green",
+      "group2": "yellow",
+      "group3": "green",
+      "group4": "red",
+      "group5": "yellow"
+    }
+  }
+}

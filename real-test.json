@@ -11,10 +11,10 @@
   "activePolicies": "523,162",
 
   "page3": {
-    "missingFieldsText1": "(3 missing fields)",
+    "missingFieldsText1": "(3 Missing fields)",
     "missingFieldsText2": " ",
-    "missingFieldsText3": "(6 missing fields)",
-    "missingFieldsText4": "(2 missing fields)",
+    "missingFieldsText3": "(6 Missing fields)",
+    "missingFieldsText4": "(2 Missing fields)",
     "missingFieldsText5": " ",
     "dots": {
       "group1": "green",

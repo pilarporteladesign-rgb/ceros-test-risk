@@ -1,26 +1,69 @@
 {
-  "companyName": "My Company",
-  "industry": "Aerospace",
-  "annualRevenue": "$340,000,000",
-  "documentsUploaded": 42,
-  "datapointsIdentified": 56,
-  "questionsAnswered": 9,
+  "companyName": "ABC Company",
+  "industry": "Manufacturing",
+  "annualRevenue": "$550,000,000",
+  "documentsUploaded": 12,
+  "datapointsIdentified": 47,
+  "questionsAnswered": 14,
   "totalPremiumNumber": "$5.1B",
-  "totalPremiumLabel": "Total Premium - Aerospace",
+  "totalPremiumLabel": "Total Premium - Manufacturing",
   "clientsInIndustry": "71,453",
   "activePolicies": "123,162",
+
   "page3": {
-    "missingFieldsText1": "(1 missing fields)",
+    "missingFieldsText1": "(2 missing fields)",
     "missingFieldsText2": "(2 missing fields)",
-    "missingFieldsText3": "(5 missing fields)",
+    "missingFieldsText3": "(2 missing fields)",
     "missingFieldsText4": "(2 missing fields)",
-    "missingFieldsText5": " ",
+    "missingFieldsText5": "(2 missing fields)",
     "dots": {
       "group1": "green",
-      "group2": "green",
+      "group2": "yellow",
       "group3": "green",
       "group4": "red",
-      "group5": "green"
+      "group5": "yellow"
     }
+  },
+
+  "page5": {
+    "industry": "Manufacturing",
+    "cards": [
+      {
+        "companyName": "Acme Manufacturing",
+        "revenue": "$3.4B",
+        "globalPremium": "$41.2M",
+        "rating": "A++"
+      },
+      {
+        "companyName": "Northline Industrial",
+        "revenue": "$2.1B",
+        "globalPremium": "$28.7M",
+        "rating": "A+"
+      },
+      {
+        "companyName": "Summit Fabrication",
+        "revenue": "$1.8B",
+        "globalPremium": "$25.4M",
+        "rating": "A"
+      },
+      {
+        "companyName": "Blue Harbor Components",
+        "revenue": "$1.2B",
+        "globalPremium": "$19.8M",
+        "rating": "A-"
+      },
+      {
+        "companyName": "ForgePoint Industries",
+        "revenue": "$950M",
+        "globalPremium": "$14.5M",
+        "rating": "B++"
+      },
+      {
+        "companyName": "CoreBuild Manufacturing",
+        "revenue": "$720M",
+        "globalPremium": "$11.3M",
+        "rating": "B+"
+      }
+    ]
   }
 }

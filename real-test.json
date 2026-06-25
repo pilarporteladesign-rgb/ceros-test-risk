@@ -1,35 +1,35 @@
 {
-  "companyName": "ABC Company",
-  "industry": "Manufacturing",
-  "annualRevenue": "$550,000,000",
-  "documentsUploaded": 12,
-  "datapointsIdentified": 47,
-  "questionsAnswered": 14,
-  "totalPremiumNumber": "$5.1B",
-  "totalPremiumLabel": "Total Premium - Manufacturing",
-  "clientsInIndustry": "71,453",
-  "activePolicies": "123,162",
+  "companyName": "Gallagher",
+  "industry": "Aerospace",
+  "annualRevenue": "$450,000,000",
+  "documentsUploaded": 02,
+  "datapointsIdentified": 17,
+  "questionsAnswered": 09,
+  "totalPremiumNumber": "$3.1B",
+  "totalPremiumLabel": "Total Premium - Aerospace",
+  "clientsInIndustry": "81,463",
+  "activePolicies": "523,162",
 
   "page3": {
-    "missingFieldsText1": "(2 missing fields)",
-    "missingFieldsText2": "(2 missing fields)",
-    "missingFieldsText3": "(2 missing fields)",
+    "missingFieldsText1": "(3 missing fields)",
+    "missingFieldsText2": " ",
+    "missingFieldsText3": "(6 missing fields)",
     "missingFieldsText4": "(2 missing fields)",
-    "missingFieldsText5": "(2 missing fields)",
+    "missingFieldsText5": " ",
     "dots": {
       "group1": "green",
       "group2": "yellow",
       "group3": "green",
-      "group4": "red",
-      "group5": "yellow"
+      "group4": "yellow",
+      "group5": "red"
     }
   },
 
   "page5": {
-    "industry": "Manufacturing",
+    "industry": "Aerospace",
     "cards": [
       {
-        "companyName": "Acme Manufacturing",
+        "companyName": "Acme Aerospace",
         "revenue": "$3.4B",
         "globalPremium": "$41.2M",
         "rating": "A++"
@@ -44,7 +44,7 @@
         "companyName": "Summit Fabrication",
         "revenue": "$1.8B",
         "globalPremium": "$25.4M",
-        "rating": "A"
+        "rating": "B"
       },
       {
         "companyName": "Blue Harbor Components",

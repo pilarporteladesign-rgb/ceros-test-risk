@@ -1,0 +1,51 @@
+{
+  "page1": {
+    "companyName": "Northstar Manufacturing",
+    "industry": "Manufacturing",
+    "annualRevenue": "$125M",
+    "documentsUploaded": "42",
+    "datapointsIdentified": "1,284",
+    "questionsAnswered": "96%",
+    "totalPremiumNumber": "$2.4M",
+    "totalPremiumLabel": "Estimated total premium",
+    "clientsInIndustry": "187",
+    "activePolicies": "24"
+  },
+  "page3": {
+    "missingFieldsText1": "Five-year loss runs",
+    "missingFieldsText2": "Property schedule",
+    "missingFieldsText3": "Cybersecurity controls",
+    "missingFieldsText4": "Business continuity plan",
+    "missingFieldsText5": "Fleet safety documentation",
+    "dots": {
+      "group1": "green",
+      "group2": "yellow",
+      "group3": "red",
+      "group4": "good",
+      "group5": "warning"
+    }
+  },
+  "page5": {
+    "industryTag": "Manufacturing",
+    "cards": [
+      {
+        "companyName": "Example Carrier One",
+        "revenue": "$18.2B",
+        "globalPremium": "$4.8B",
+        "rating": "A++"
+      },
+      {
+        "companyName": "Example Carrier Two",
+        "revenue": "$11.6B",
+        "globalPremium": "$3.1B",
+        "rating": "A+"
+      },
+      {
+        "companyName": "Example Carrier Three",
+        "revenue": "$7.9B",
+        "globalPremium": "$2.2B",
+        "rating": "A"
+      }
+    ]
+  }
+}

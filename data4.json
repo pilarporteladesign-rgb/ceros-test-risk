@@ -26,7 +26,7 @@
     }
   },
   "page5": {
-    "industryTag": "Manufacturing",
+    "industryTag": "Transportation",
     "cards": [
       {
         "companyName": "Example Carrier One",
@@ -44,7 +44,7 @@
         "companyName": "Example Carrier Three",
         "revenue": "$7.9B",
         "globalPremium": "$2.2B",
-        "rating": "A"
+        "rating": "A-"
       }
     ]
   }

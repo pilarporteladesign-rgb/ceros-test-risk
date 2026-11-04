@@ -1,22 +1,22 @@
 {
   "page1": {
-    "companyName": "Northstar Manufacturing",
+    "companyName": "Northstar Transportation",
     "industry": "Manufacturing",
-    "annualRevenue": "$125M",
+    "annualRevenue": "$125B",
     "documentsUploaded": "42",
-    "datapointsIdentified": "1,284",
+    "datapointsIdentified": "26",
     "questionsAnswered": "96%",
-    "totalPremiumNumber": "$2.4M",
-    "totalPremiumLabel": "Estimated total premium",
+    "totalPremiumNumber": "$3.6B",
+    "totalPremiumLabel": "Total Premium - Transportation",
     "clientsInIndustry": "187",
     "activePolicies": "24"
   },
   "page3": {
-    "missingFieldsText1": "Five-year loss runs",
-    "missingFieldsText2": "Property schedule",
-    "missingFieldsText3": "Cybersecurity controls",
-    "missingFieldsText4": "Business continuity plan",
-    "missingFieldsText5": "Fleet safety documentation",
+    "missingFieldsText1": "(8 Missing fields)",
+    "missingFieldsText2": "(1 Missing fields)",
+    "missingFieldsText3": "",
+    "missingFieldsText4": "(3 Missing fields)",
+    "missingFieldsText5": "(5 Missing fields)",
     "dots": {
       "group1": "green",
       "group2": "yellow",
